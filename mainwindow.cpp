@@ -17,5 +17,5 @@ MainWindow::~MainWindow() {
 
 void MainWindow::buttonClicked()
 {
-    qDebug() << "sdfgsdgsdfgsdfgsdfg";
+    qDebug() << "Clicked!!!";
 }
