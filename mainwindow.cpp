@@ -15,7 +15,6 @@ MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::buttonClicked()
-{
-    qDebug() << "Clicked!!!";
+void MainWindow::buttonClicked( const QString& text ){
+    qDebug() << text;
 }

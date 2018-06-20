@@ -3,7 +3,7 @@ import QtQuick 2.4
 MainForm {
 
     button.onClicked: {
-        mainWidget.buttonClicked();
+        mainWidget.buttonClicked( textField.text );
     }
 
 }

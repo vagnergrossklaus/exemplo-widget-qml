@@ -16,7 +16,7 @@ public:
     ~MainWindow();
 
 public slots:
-    void buttonClicked();
+    void buttonClicked(const QString& text);
 
 private:
     Ui::MainWindow *ui;
