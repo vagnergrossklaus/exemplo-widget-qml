@@ -7,6 +7,7 @@ Item {
     height: 400
     property alias textField: textField
     property alias button: button
+    property alias label: label
 
     Column {
         id: column
@@ -34,6 +35,15 @@ Item {
             anchors.rightMargin: 0
             anchors.left: parent.left
             anchors.leftMargin: 0
+        }
+
+        Label {
+            id: label
+            text: qsTr("Label")
+            anchors.left: parent.left
+            anchors.leftMargin: 0
+            anchors.right: parent.right
+            anchors.rightMargin: 0
         }
     }
 }

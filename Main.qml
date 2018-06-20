@@ -6,4 +6,8 @@ MainForm {
         mainWidget.buttonClicked( textField.text );
     }
 
+    function setText( text ) {
+        label.text = text
+    }
+
 }

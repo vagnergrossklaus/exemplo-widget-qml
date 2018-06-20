@@ -15,6 +15,10 @@ MainWindow::~MainWindow() {
     delete ui;
 }
 
+void MainWindow::setText(const QString& text) {
+    QMetaObject::invokeMethod( (QObject*)ui->quickWidget->rootObject(), "setText", Q_ARG(QVariant, text) );
+}
+
 void MainWindow::buttonClicked( const QString& text ){
-    qDebug() << text;
+    this->setText( text );
 }

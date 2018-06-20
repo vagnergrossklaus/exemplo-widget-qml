@@ -15,6 +15,8 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+    void setText( const QString& text );
+
 public slots:
     void buttonClicked(const QString& text);
 
