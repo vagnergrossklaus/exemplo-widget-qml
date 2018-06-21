@@ -15,10 +15,10 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
-    void setText( const QString& text );
+    void setText(const QString& text , const QString& textColor);
 
 public slots:
-    void buttonClicked(const QString& text);
+    void buttonClicked(const QString& text, const QString& textColor);
 
 private:
     Ui::MainWindow *ui;

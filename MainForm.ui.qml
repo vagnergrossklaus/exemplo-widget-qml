@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import QtQuick.Controls 2.0
+import QtQuick.Controls 2.2
 
 Item {
 
@@ -8,6 +8,7 @@ Item {
     property alias textField: textField
     property alias button: button
     property alias label: label
+    property alias comboBox: comboBox
 
     Column {
         id: column
@@ -25,6 +26,39 @@ Item {
             anchors.leftMargin: 0
             anchors.right: parent.right
             anchors.rightMargin: 0
+        }
+
+        ComboBox {
+            id: comboBox
+            width: 390
+            textRole: "key"
+            focusPolicy: Qt.ClickFocus
+            editable: false
+            flat: false
+            currentIndex: 0
+            anchors.left: parent.left
+            anchors.leftMargin: 0
+            anchors.right: parent.right
+            anchors.rightMargin: 0
+            model: [{
+                    key: "Red",
+                    value: "red"
+                }, {
+                    key: "Blue",
+                    value: "blue"
+                }, {
+                    key: "Green",
+                    value: "green"
+                }, {
+                    key: "Gray",
+                    value: "gray"
+                }, {
+                    key: "Yelow",
+                    value: "yelow"
+                }, {
+                    key: "Black",
+                    value: "black"
+                }]
         }
 
         Button {

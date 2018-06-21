@@ -15,10 +15,10 @@ MainWindow::~MainWindow() {
     delete ui;
 }
 
-void MainWindow::setText(const QString& text) {
-    QMetaObject::invokeMethod( (QObject*)ui->quickWidget->rootObject(), "setText", Q_ARG(QVariant, text) );
+void MainWindow::setText(const QString& text, const QString& textColor) {
+    QMetaObject::invokeMethod( (QObject*)ui->quickWidget->rootObject(), "setText", Q_ARG(QVariant, text), Q_ARG(QVariant, textColor) );
 }
 
-void MainWindow::buttonClicked( const QString& text ){
-    this->setText( text );
+void MainWindow::buttonClicked(const QString& text , const QString& textColor){
+    this->setText( QString("Writing \"%1\" in %2 color").arg(text, textColor), textColor );
 }

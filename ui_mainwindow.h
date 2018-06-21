@@ -33,9 +33,10 @@ public:
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         verticalLayout = new QVBoxLayout(centralWidget);
-        verticalLayout->setSpacing(6);
+        verticalLayout->setSpacing(0);
         verticalLayout->setContentsMargins(11, 11, 11, 11);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
         quickWidget = new QQuickWidget(centralWidget);
         quickWidget->setObjectName(QStringLiteral("quickWidget"));
         quickWidget->setResizeMode(QQuickWidget::SizeRootObjectToView);
